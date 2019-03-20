@@ -5,9 +5,10 @@ const path = require('path');
 
 var app = express(); //express the function returns an object to app
 const router = express.Router();
+const home = require('./routes/index')
 
 
-const home=require('./routes/index')
+// const home=require('./routes/index')
 
 app.engine('handlebars', exphbs({
   defaultLayout: 'main'
